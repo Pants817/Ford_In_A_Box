@@ -20,6 +20,7 @@ class CanBus:
 			timestamp = datetime.now().strftime("%d-%m-%y_%H-%M-%S")
 			file_name = log_folder+"/log_"+timestamp
 			self.log_file = can.ASCWriter(file_name)
+			print(file_name)
 		
 		self.channel = channel
 		self.bus = can.ThreadSafeBus(channel = channel, interface = "socketcan")
@@ -48,7 +49,7 @@ class CanBus:
 			if self.arb_id == None:
 				raise ValueError("The arb_id must be either passed into the send function or set when creating the Canbus object")
 			arb_id = self.arb_id
-		msg = can.Message(arbitration_id=arb_id, data=data, is_extended_id=is_extended, is_error_frame=is_error, is_remote_frame=is_remote)
+		msg = can.Message(arbitration_id=arb_id, data=data, is_extended_id=is_extended, is_error_frame=is_error, is_remote_frame=is_remote, is_rx=False)
 		self.bus.send(msg)
 		if self.log_file:
 			self.log_file.log_event(msg)
