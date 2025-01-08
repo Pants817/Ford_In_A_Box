@@ -21,6 +21,8 @@ class CanBus:
 			file_name = log_folder+"/log_"+timestamp
 			self.log_file = can.ASCWriter(file_name)
 			print(file_name)
+
+		self.stop_listening = False # used with the listen function to say when to stop
 		
 		self.channel = channel
 		self.bus = can.ThreadSafeBus(channel = channel, interface = "socketcan")
@@ -32,6 +34,10 @@ class CanBus:
 	def __exit__(self, *args):
 		self.shutdown()
 		print(f"{self.channel} closed")
+		
+	def create_message(self):
+		#this could be used later but not sure if it is needed
+		pass
 	
 	def send(self, data, arb_id = None, is_extended = False, is_error=False, is_remote=False):
 		"""
@@ -53,6 +59,20 @@ class CanBus:
 		self.bus.send(msg)
 		if self.log_file:
 			self.log_file.log_event(msg)
+		return msg
+			
+	def send_periodic(self, data, period, arb_id=None, duration = None, callback = None):
+		if len(data) > 8:
+			raise IndexError("The message payload shouldn't be above 8")
+		if arb_id == None:
+			if self.arb_id == None:
+				raise ValueError("The arb_id must be either passed into the send function or set when creating the Canbus object")
+			arb_id = self.arb_id
+		msg = can.Message(arbitration_id=arb_id, data=data, is_extended_id=False, is_error_frame=False, is_remote_frame=False, is_rx=False)
+		if self.log_file:
+			self.log_file.log_event(msg)
+		task = self.bus.send_periodic(msg, period, duration)
+		return task
 			
 	def recv(self, arb_id = None, timeout = 0.2):
 		"""
@@ -77,7 +97,16 @@ class CanBus:
 					return response
 				delta_time = time.time() - start_time
 			return -1
-			
+
+	def listen(self):
+		self.stop_listening = False
+		while not self.stop_listening:
+			response = self.recv()
+			yield response
+
+	def stop_listen(self):
+		self.stop_listening = True
+
 	def shutdown(self):
 		"""
 		Shutsdown the bus and stops logging
