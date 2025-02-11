@@ -1,0 +1,20 @@
+date Wed Jan 08 07:13:02.833 PM 2025
+base hex  timestamps absolute
+internal events logged
+Begin Triggerblock Thu Jan 01 01:00:00.0 AM 1970
+ 0.000000 Start of measurement
+ 0.000000 Timestamp:        0.000000        ID: 03b3    S Tx                DL:  8    40 00 00 80 00 00 00 00
+ 0.000000 Timestamp:        0.000000        ID: 03b3    S Tx                DL:  8    40 00 00 80 00 00 00 00
+ 0.000000 Timestamp:        0.000000        ID: 03b3    S Tx                DL:  8    40 00 00 80 00 00 00 00
+ 0.000000 Timestamp:        0.000000        ID: 03b3    S Tx                DL:  8    40 00 00 80 00 00 00 00
+ 0.000000 Timestamp:        0.000000        ID: 03b3    S Tx                DL:  8    40 00 00 80 00 00 00 00
+ 0.000000 Timestamp:        0.000000        ID: 03b3    S Tx                DL:  8    40 00 00 80 00 00 00 00
+ 0.000000 Timestamp:        0.000000        ID: 03b3    S Tx                DL:  8    40 00 00 80 00 00 00 00
+ 0.000000 Timestamp:        0.000000        ID: 03b3    S Tx                DL:  8    40 00 00 80 00 00 00 00
+ 0.000000 Timestamp:        0.000000        ID: 03b3    S Tx                DL:  8    40 00 00 80 00 00 00 00
+ 0.000000 Timestamp:        0.000000        ID: 03b3    S Tx                DL:  8    40 00 00 80 00 00 00 00
+ 0.000000 Timestamp:        0.000000        ID: 03b3    S Tx                DL:  8    40 00 00 80 00 00 00 00
+ 0.000000 Timestamp:        0.000000        ID: 03b3    S Tx                DL:  8    40 00 00 80 00 00 00 00
+ 0.000000 Timestamp:        0.000000        ID: 03b3    S Tx                DL:  8    40 00 00 80 00 00 00 00
+ 0.000000 Timestamp:        0.000000        ID: 03b3    S Tx                DL:  8    40 00 00 80 00 00 00 00
+End TriggerBlock
