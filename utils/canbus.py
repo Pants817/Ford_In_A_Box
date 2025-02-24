@@ -19,7 +19,7 @@ class CanBus:
 		else:
 			timestamp = datetime.now().strftime("%d-%m-%y_%H-%M-%S")
 			file_name = log_folder+"/log_"+timestamp
-			self.log_file = can.ASCWriter(file_name)
+			self.log_file = can.ASCWriter(file_name, 1 if self.channel == "can0" else 2)
 			print(file_name)
 
 		self.stop_listening = False # used with the listen function to say when to stop
@@ -27,6 +27,7 @@ class CanBus:
 		self.channel = channel
 		self.bus = can.ThreadSafeBus(channel = channel, interface = "socketcan")
 		self.arb_id = arb_id
+		self.start_time = None
 		
 	def __enter__(self):
 		return self
@@ -58,7 +59,7 @@ class CanBus:
 		msg = can.Message(arbitration_id=arb_id, data=data, is_extended_id=is_extended, is_error_frame=is_error, is_remote_frame=is_remote, is_rx=False)
 		self.bus.send(msg)
 		if self.log_file:
-			self.log_file.log_event(msg)
+			self.log_file.on_message_received(msg)
 		return msg
 			
 	def send_periodic(self, data, period, arb_id=None, duration = None, callback = None):
@@ -70,7 +71,7 @@ class CanBus:
 			arb_id = self.arb_id
 		msg = can.Message(arbitration_id=arb_id, data=data, is_extended_id=False, is_error_frame=False, is_remote_frame=False, is_rx=False)
 		if self.log_file:
-			self.log_file.log_event(msg)
+			self.log_file.on_message_received(msg)
 		task = self.bus.send_periodic(msg, period, duration)
 		return task
 			
@@ -84,7 +85,7 @@ class CanBus:
 		if arb_id  == None:
 			response = self.bus.recv(timeout)
 			if self.log_file and response:
-				self.log_file.log_event(response)
+				self.log_file.on_message_received(response)
 			return response
 		else:
 			delta_time = 0
@@ -92,7 +93,7 @@ class CanBus:
 			while delta_time < timeout:
 				response = self.bus.recv(timeout)
 				if self.log_file and response:
-					self.log_file.log_event(response)
+					self.log_file.on_message_received(response)
 				if response and response.id == arb_id:
 					return response
 				delta_time = time.time() - start_time
