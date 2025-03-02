@@ -1,7 +1,7 @@
 from utils.canbus import CanBus
 import time 
 
-with CanBus(channel = "can0", log_folder = r"log_files/pcm/lock_testing") as can0:
+with CanBus(channel = "can0", log_folder = r"log_files/bcm/lock_testing") as can0:
     try:
         while True:
             response = can0.recv()
@@ -14,3 +14,5 @@ with CanBus(channel = "can0", log_folder = r"log_files/pcm/lock_testing") as can
     except KeyboardInterrupt:
         pass
 print("stopped")
+ 
+ 
