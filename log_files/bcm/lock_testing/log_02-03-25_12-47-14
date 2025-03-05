@@ -1,0 +1,22 @@
+date Sun Mar 02 12:47:14.435 PM 2025
+base hex  timestamps absolute
+internal events logged
+Begin Triggerblock Sun Mar 02 12:47:14.437 PM 2025
+ 0.000000 Start of measurement
+ 0.000000 1  42C             Rx   d 8 80 00 00 00 00 00 00 00
+ 0.028536 1  41              Rx   d 8 00 00 00 00 00 00 00 00
+ 0.028714 1  242             Rx   d 8 FF FF 3F FF BA 00 03 00
+ 0.048374 1  42C             Rx   d 8 80 00 00 00 00 00 00 00
+ 0.068039 1  242             Rx   d 8 FF FF 3F FF BA 00 03 00
+ 0.098145 1  42C             Rx   d 8 80 00 00 00 00 00 00 00
+ 0.107389 1  242             Rx   d 8 FF FF 3F FF BA 00 03 00
+ 0.126918 1  41              Rx   d 8 00 00 00 00 00 00 00 00
+ 0.146872 1  38D             Rx   d 8 20 00 00 00 00 00 0C F0
+ 0.147128 1  3B1             Rx   d 8 00 00 00 00 00 00 00 00
+ 0.147625 1  3B7             Rx   d 8 00 00 00 00 00 00 00 00
+ 0.147863 1  3B8             Rx   d 8 FF FF FF FF 00 00 00 00
+ 0.148129 1  3E3             Rx   d 8 00 00 00 00 80 00 00 00
+ 0.148369 1  3EB             Rx   d 8 01 04 04 00 00 00 00 00
+ 0.148874 1  42C             Rx   d 8 80 00 00 00 00 00 00 00
+ 0.149107 1  43C             Rx   d 8 B2 00 4B 2C 3C 99 88 14
+End TriggerBlock
