@@ -1,0 +1,46 @@
+date Wed Jan 08 07:35:41.079 PM 2025
+base hex  timestamps absolute
+internal events logged
+Begin Triggerblock Thu Jan 01 01:00:00.0 AM 1970
+ 0.000000 Start of measurement
+ 0.000000 Timestamp:        0.000000        ID: 0500    S Tx                DL:  8    00 00 ff ff ff ff ff ff
+ 0.000000 Timestamp:        0.000000        ID: 0501    S Tx                DL:  8    01 00 ff ff ff ff ff ff
+ 0.000000 Timestamp:        0.000000        ID: 0502    S Tx                DL:  8    02 00 ff ff ff ff ff ff
+ 0.000000 Timestamp:        0.000000        ID: 0503    S Tx                DL:  8    03 00 ff ff ff ff ff ff
+ 0.000000 Timestamp:        0.000000        ID: 0504    S Tx                DL:  8    04 00 ff ff ff ff ff ff
+ 0.000000 Timestamp:        0.000000        ID: 0505    S Tx                DL:  8    05 00 ff ff ff ff ff ff
+ 0.000000 Timestamp:        0.000000        ID: 0506    S Tx                DL:  8    06 00 ff ff ff ff ff ff
+ 0.000000 Timestamp:        0.000000        ID: 0507    S Tx                DL:  8    07 00 ff ff ff ff ff ff
+ 0.000000 Timestamp:        0.000000        ID: 0508    S Tx                DL:  8    08 00 ff ff ff ff ff ff
+ 0.000000 Timestamp:        0.000000        ID: 0509    S Tx                DL:  8    09 00 ff ff ff ff ff ff
+ 0.000000 Timestamp:        0.000000        ID: 050a    S Tx                DL:  8    0a 00 ff ff ff ff ff ff
+ 0.000000 Timestamp:        0.000000        ID: 050b    S Tx                DL:  8    0b 00 ff ff ff ff ff ff
+ 0.000000 Timestamp:        0.000000        ID: 050c    S Tx                DL:  8    0c 00 ff ff ff ff ff ff
+ 0.000000 Timestamp:        0.000000        ID: 050d    S Tx                DL:  8    0d 00 ff ff ff ff ff ff
+ 0.000000 Timestamp:        0.000000        ID: 050e    S Tx                DL:  8    0e 00 ff ff ff ff ff ff
+ 0.000000 Timestamp:        0.000000        ID: 050f    S Tx                DL:  8    0f 00 ff ff ff ff ff ff
+ 0.000000 Timestamp:        0.000000        ID: 0510    S Tx                DL:  8    10 00 ff ff ff ff ff ff
+ 0.000000 Timestamp:        0.000000        ID: 0511    S Tx                DL:  8    11 00 ff ff ff ff ff ff
+ 0.000000 Timestamp:        0.000000        ID: 0512    S Tx                DL:  8    12 00 ff ff ff ff ff ff
+ 0.000000 Timestamp:        0.000000        ID: 0513    S Tx                DL:  8    13 00 ff ff ff ff ff ff
+ 0.000000 Timestamp:        0.000000        ID: 0514    S Tx                DL:  8    14 00 ff ff ff ff ff ff
+ 0.000000 Timestamp:        0.000000        ID: 0515    S Tx                DL:  8    15 00 ff ff ff ff ff ff
+ 0.000000 Timestamp:        0.000000        ID: 0516    S Tx                DL:  8    16 00 ff ff ff ff ff ff
+ 0.000000 Timestamp:        0.000000        ID: 0517    S Tx                DL:  8    17 00 ff ff ff ff ff ff
+ 0.000000 Timestamp:        0.000000        ID: 0518    S Tx                DL:  8    18 00 ff ff ff ff ff ff
+ 0.000000 Timestamp:        0.000000        ID: 0519    S Tx                DL:  8    19 00 ff ff ff ff ff ff
+ 0.000000 Timestamp:        0.000000        ID: 051a    S Tx                DL:  8    1a 00 ff ff ff ff ff ff
+ 0.000000 Timestamp:        0.000000        ID: 051b    S Tx                DL:  8    1b 00 ff ff ff ff ff ff
+ 0.000000 Timestamp:        0.000000        ID: 051c    S Tx                DL:  8    1c 00 ff ff ff ff ff ff
+ 0.000000 Timestamp:        0.000000        ID: 051d    S Tx                DL:  8    1d 00 ff ff ff ff ff ff
+ 0.000000 Timestamp:        0.000000        ID: 051e    S Tx                DL:  8    1e 00 ff ff ff ff ff ff
+ 0.000000 Timestamp:        0.000000        ID: 051f    S Tx                DL:  8    1f 00 ff ff ff ff ff ff
+ 0.000000 Timestamp:        0.000000        ID: 0520    S Tx                DL:  8    20 00 ff ff ff ff ff ff
+ 0.000000 Timestamp:        0.000000        ID: 0521    S Tx                DL:  8    21 00 ff ff ff ff ff ff
+ 0.000000 Timestamp:        0.000000        ID: 0522    S Tx                DL:  8    22 00 ff ff ff ff ff ff
+ 0.000000 Timestamp:        0.000000        ID: 0523    S Tx                DL:  8    23 00 ff ff ff ff ff ff
+ 0.000000 Timestamp:        0.000000        ID: 0524    S Tx                DL:  8    24 00 ff ff ff ff ff ff
+ 0.000000 Timestamp:        0.000000        ID: 0525    S Tx                DL:  8    25 00 ff ff ff ff ff ff
+ 0.000000 Timestamp:        0.000000        ID: 0526    S Tx                DL:  8    26 00 ff ff ff ff ff ff
+ 0.000000 Timestamp:        0.000000        ID: 0527    S Tx                DL:  8    27 00 ff ff ff ff ff ff
+End TriggerBlock
