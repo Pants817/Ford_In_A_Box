@@ -26,7 +26,8 @@ class CanBus:
 			timestamp = datetime.now().strftime("%d-%m-%y_%H-%M-%S")
 			file_name = log_folder+"/log_"+timestamp
 			self.logger = can.ASCWriter(file_name)
-			self.notifier = can.Notifier(self.bus, [self.logger])
+			self.printer = can.Printer()
+			self.notifier = can.Notifier(self.bus, [self.logger, self.printer])
 			print(file_name)
 		
 	def __enter__(self):
@@ -115,6 +116,9 @@ class CanBus:
 		self.bus.shutdown()
 		if self.logger != None:
 			self.notifier.stop()
+			
+	def add_filter(self, ID:int):
+		self.bus.set_filters([{"can_id": ID, "can_mask": 0xFFF, "extended": False}])
 		
 	
 

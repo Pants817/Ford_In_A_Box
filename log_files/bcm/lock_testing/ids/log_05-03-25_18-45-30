@@ -1,0 +1,16 @@
+date Wed Mar 05 06:45:30.903 PM 2025
+base hex  timestamps absolute
+internal events logged
+Begin Triggerblock Wed Mar 05 06:45:32.656 PM 2025
+ 0.000000 Start of measurement
+ 0.000000 1  3C3             Rx   d 8 5C 00 20 00 00 00 00 00
+ 0.027103 1  3C3             Rx   d 8 5C CC 20 00 00 00 00 00
+ 0.056267 1  3C3             Rx   d 8 5C C8 20 00 00 00 01 00
+ 0.085112 1  3C3             Rx   d 8 5C C8 20 C0 00 00 01 00
+ 0.115591 1  3C3             Rx   d 8 5C C8 20 C0 00 00 01 00
+ 0.252906 1  3C3             Rx   d 8 5C C8 00 C0 00 00 01 00
+ 1.000316 1  3C3             Rx   d 8 40 C8 00 C0 00 00 81 00
+ 1.079360 1  3C3             Rx   d 8 40 C8 00 C0 00 00 81 00
+ 2.062425 1  3C3             Rx   d 8 40 C8 00 C0 00 00 81 00
+ 3.045304 1  3C3             Rx   d 8 40 C8 00 C0 00 00 81 00
+End TriggerBlock

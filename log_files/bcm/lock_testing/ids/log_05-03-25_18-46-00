@@ -1,0 +1,9 @@
+date Wed Mar 05 06:46:00.823 PM 2025
+base hex  timestamps absolute
+internal events logged
+Begin Triggerblock Wed Mar 05 06:46:01.163 PM 2025
+ 0.000000 Start of measurement
+ 0.000000 1  3EB             Rx   d 8 00 04 04 00 00 00 00 00
+ 0.983293 1  3EB             Rx   d 8 00 04 04 00 00 00 00 00
+ 1.966003 1  3EB             Rx   d 8 00 04 04 00 00 00 00 00
+End TriggerBlock
