@@ -30,7 +30,7 @@ def get_rpm_message_data(rpm):
     if rpm_gate >115:
         rpm_gate = 115
         
-    return [0x00,0x00,0x00,0x00,0x00,0x00, rpm_gate, finetune]
+    return [0x7D,0x02,0x05,0x4E,0x20,0xFF, rpm_gate, finetune]
 	
 def get_speed_message_data(mph, counter): # need to tweek this speed calc for mph
     speed = mph * 1.609
