@@ -16,5 +16,6 @@ while True:
     print("\nshowing data breakdown\n")
     
     decoding = db.decode_message(id, data)
+    
     for key, value in decoding.items():
         print(f"{key} = {value}")
